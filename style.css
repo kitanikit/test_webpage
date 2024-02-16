@@ -1,0 +1,36 @@
+.header {
+    display: flex;
+    width: 100%;
+    position: absolute; 
+    align-items: center;
+    text-align: right;
+    box-sizing: border-box;
+    /* justify-content: flex-end; */
+}
+
+.header__menu {
+    width: 100%;
+    display: flex;
+    align-content: right;
+    justify-content: flex-end;
+    padding-right: 24px;
+    gap: 24px;
+}
+
+.menuItem {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+.logo__image {
+    padding: 24px;
+    margin: 0;
+}
+
+.box {
+    width: 1680px;
+    height: 620px;
+    background-color: grey;
+}
