@@ -25,10 +25,35 @@ body {
     align-items: center;
     gap: 24px;
   }
+  .menuItem:hover {
+    color: red;
+  }
 }
 
 .main__content {
   background: #ebeaea;
   height: calc(100vh - 148px - 24px);
   width: 100%;
+}
+
+.main__container {
+  flex-direction: column;
+  border-radius: 5px;
+  gap: 48px;
+
+  
+    > button {
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        border-radius: 10px;
+        width: 144px;
+        height: 48px;
+        background: rgb(25, 18, 18); 
+    }
+    > button:hover {
+        background-color: rgb(132, 220, 211);
+    }
 }
