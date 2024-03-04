@@ -1,95 +1,90 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=1920-1080, initial-scale=1.0" />
-    <title>WebPage</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="container">
-      <div class="header">
-        <div class="header__logo"></div>
-        <div class="header__menu">
-          <svg
-            class="header__line"
-            width="2.000000"
-            height="24.000000"
-            viewBox="0 0 2 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-          >
-            <line
-              id="Линия 1"
-              x1="1.000000"
-              y1="0.000000"
-              x2="1.000000"
-              y2="24.000000"
-              stroke="#000000"
-              stroke-opacity="1.000000"
-              stroke-width="2.000000"
-            />
-          </svg>
-          <div class="menuItem">пункт 1</div>
-          <div class="menuItem">пункт 2</div>
-          <div class="menuItem">пункт 3</div>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=1920-1080, initial-scale=1.0" />
+  <title>WebPage</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="header__logo"></div>
+      <div class="header__menu">
+        <svg class="header__line" width="2.000000" height="24.000000" viewBox="0 0 2 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <line id="Линия 1" x1="1.000000" y1="0.000000" x2="1.000000" y2="24.000000" stroke="#000000"
+            stroke-opacity="1.000000" stroke-width="2.000000" />
+        </svg>
+        <div class="menuItem">пункт 1</div>
+        <div class="menuItem">пункт 2</div>
+        <div class="menuItem">пункт 3</div>
       </div>
-      <div class="main__content">
-        <div class="buttons__container">
-          <button>кнопка 1</button>
-          <button>кнопка 2</button>
-          <button>кнопка 3</button>
-        </div>
-        <div class="calc__container">
-          <div class="calc">
-            <div class="numbers">
-              <!-- //сделать отдельный блок для инпута, в который поместить сам инпут
+    </div>
+    <div class="main__content">
+      <div class="buttons__container">
+        <button>кнопка 1</button>
+        <button>кнопка 2</button>
+        <button>кнопка 3</button>
+      </div>
+      <div class="calc__container">
+        <div class="calc">
+          <div class="numbers">
+            <!-- //сделать отдельный блок для инпута, в который поместить сам инпут
               и кнопку назад. блок имеет position relative, а кнопка назад
               абсолютное позиционирование. -->
-              <input type="text" />
-              <div class="row">
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>+</button>
-              </div>
-              <div class="row">
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button>x</button>
-              </div>
-              <div class="row">
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button>-</button>
-              </div>
-              <div class="row">
-                <button class="clear">C</button>
-                <button>0</button>
-                <button class="equal">=</button>
-                <button>/</button>
-              </div>
+            <div class="input_container">
+              <input type="text" oninput="toggleClearIcon(this)">
+              <i><svg width="30.000000" height="34.641022" viewBox="0 0 30 34.641" fill="none"
+                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <defs />
+                  <path id="Многоугольник 1" d="M0 17.3205L30 34.641L30 0L0 17.3205Z" fill="#C4C4C4"
+                    fill-opacity="1.000000" fill-rule="evenodd" />
+                </svg>
+              </i>
             </div>
+
+          </div>
+          <div class="row">
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>+</button>
+          </div>
+          <div class="row">
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>x</button>
+          </div>
+          <div class="row">
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>-</button>
+          </div>
+          <div class="row">
+            <button class="clear">C</button>
+            <button>0</button>
+            <button class="equal">=</button>
+            <button>/</button>
           </div>
         </div>
       </div>
     </div>
-    <script src="main.js"></script>
-  </body>
+  </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
 </html>

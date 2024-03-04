@@ -14,13 +14,14 @@ body {
   display: flex;
   justify-content: space-between;
 
-  > .header__logo {
+  >.header__logo {
     width: 100px;
     height: 100px;
     background: #c23030;
     border-radius: 50px;
   }
-  > .header__menu {
+
+  >.header__menu {
     display: flex;
     align-items: center;
     gap: 24px;
@@ -28,6 +29,7 @@ body {
     font-style: normal;
     font-weight: 400;
   }
+
   .menuItem:hover {
     color: red;
   }
@@ -48,7 +50,7 @@ body {
   display: flex;
   gap: 48px;
 
-  > button {
+  >button {
     color: white;
     font-family: "Montserrat", sans-serif;
     font-size: 24px;
@@ -62,7 +64,8 @@ body {
     height: 48px;
     background: rgb(25, 18, 18);
   }
-  > button:hover {
+
+  >button:hover {
     background-color: rgb(132, 220, 211);
   }
 }
@@ -101,7 +104,7 @@ body {
   gap: 16px;
   padding: 8px;
 
-  > button {
+  >button {
     height: 84px;
     width: 84px;
     background: rgb(196, 196, 196);
@@ -130,4 +133,25 @@ body {
   border: none;
   font-family: "Inter", serif;
   font-size: 36px;
+}
+
+.input_container {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+
+  >i {
+    position: absolute;
+  }
+
+  >input {
+    width: 384px;
+    height: 52px;
+    padding-right: 20px;
+    border-radius: 9px;
+    justify-content: center;
+    align-items: center;
+    border-style: none;
+    background-color: #C4C4C44D;
+  }
 }
