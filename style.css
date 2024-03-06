@@ -14,13 +14,14 @@ body {
   display: flex;
   justify-content: space-between;
 
-  > .header__logo {
+  >.header__logo {
     width: 100px;
     height: 100px;
     background: #c23030;
     border-radius: 50px;
   }
-  > .header__menu {
+
+  >.header__menu {
     display: flex;
     align-items: center;
     gap: 24px;
@@ -28,6 +29,7 @@ body {
     font-style: normal;
     font-weight: 400;
   }
+
   .menuItem:hover {
     color: red;
   }
@@ -48,7 +50,7 @@ body {
   display: flex;
   gap: 48px;
 
-  > button {
+  >button {
     color: white;
     font-family: "Montserrat", sans-serif;
     font-size: 24px;
@@ -62,7 +64,8 @@ body {
     height: 48px;
     background: rgb(25, 18, 18);
   }
-  > button:hover {
+
+  >button:hover {
     background-color: rgb(132, 220, 211);
   }
 }
@@ -78,7 +81,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  /* gap: 16px; */
+  gap: 16px;
   /* padding: 120px 60px 24px 60px; */
 }
 
@@ -99,9 +102,8 @@ body {
   display: flex;
   align-items: center;
   gap: 16px;
-  padding: 8px;
 
-  > button {
+  >button {
     height: 84px;
     width: 84px;
     background: rgb(196, 196, 196);
@@ -110,24 +112,36 @@ body {
     font-family: "Inter", serif;
     font-size: 36px;
   }
+
+  >.clear {
+    background: #E5B797;
+  }
+
+  >.equal {
+    background: #aac59f;
+  }
 }
 
-.clear {
-  height: 84px;
-  width: 84px;
-  background: rgb(229, 183, 151);
-  border-radius: 42px;
-  border: none;
-  font-family: "Inter", serif;
-  font-size: 36px;
-}
+.input_container {
+  position: relative;
+  justify-content: center;
+  align-items: center;
 
-.equal {
-  height: 84px;
-  width: 84px;
-  background: #aac59f;
-  border-radius: 42px;
-  border: none;
-  font-family: "Inter", serif;
-  font-size: 36px;
+  >svg {
+    position: absolute;
+    right: 10px;
+    align-items: center;
+    top: 8px;
+  }
+
+  >input {
+    width: 384px;
+    height: 52px;
+    padding-right: 20px;
+    border-radius: 9px;
+    justify-content: center;
+    align-items: center;
+    border-style: none;
+    background-color: #C4C4C44D;
+  }
 }
